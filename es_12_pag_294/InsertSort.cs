@@ -6,24 +6,22 @@ namespace ordinamento
 {
     public class InsertSort
     {
+        public static void shiftR (int buco,int[] array)
+        {
+            int x;
+            for (x = array.Length - 2; x >= buco; x--)
+            {
+                array[x + 1] = array[x];
+            }
+        }
         public static void Sort(int[] array )
         {
-          int nuovo;
-          int dove;
-            for(int x = 1;x<array.Length;x++)
-            {
-                int i = array[x];
-                int y = i - 1;
-                while(y>=0&&array[y]<x)
-                {
-                    array[y + 1] = array[y];
-                    y--;
-                }
-                array[y + 1] = x;
-            }
-                
-
-
+            int dove;
+            int x;
+            int nuovo;
+          for (x = 0; x < array.Length; x++)
+          { 
+          }
         }
     }
 }
