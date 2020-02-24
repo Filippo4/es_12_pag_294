@@ -71,7 +71,7 @@ namespace ConsoleArray
                         array[x] = r.Next(0, 100);
                     }
                     s.Start();
-                    ordinamento.MergeSort(array);
+                    MergeSort.Sort(array);
                     s.Stop();
                     temp = s.ElapsedMilliseconds;
                     sw.WriteLine($"ArraySort;{dim};{temp}");
