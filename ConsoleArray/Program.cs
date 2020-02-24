@@ -64,6 +64,17 @@ namespace ConsoleArray
                     s.Stop();
                     temp = s.ElapsedMilliseconds;
                     sw.WriteLine($"ArraySort;{dim};{temp}");
+
+                    for (int x = 0; x < dim; x++)
+                    {
+                        array[x] = 0;
+                        array[x] = r.Next(0, 100);
+                    }
+                    s.Start();
+                    ordinamento.MergeSort(array);
+                    s.Stop();
+                    temp = s.ElapsedMilliseconds;
+                    sw.WriteLine($"ArraySort;{dim};{temp}");
                 }
                 sw.Flush();
             }
